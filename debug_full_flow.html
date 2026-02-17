@@ -1,0 +1,1021 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🎯&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="preload" href="./static/media/SourceSansVF-Upright.ttf.BsWL4Kly.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <title>متتبع الإنتاجية</title>
+
+    <!-- initialize window.prerenderReady to false and then set to true in React app when app is ready for indexing -->
+    <script>
+      window.prerenderReady = false
+    </script>
+    <script type="module" crossorigin="" src="./static/js/index.DSTThs-t.js"></script>
+    <link rel="stylesheet" crossorigin="" href="./static/css/index.BUP6fTcR.css">
+  <style media=""></style><style data-emotion="st-emotion-cache-global" data-s=""></style><style data-emotion="st-emotion-cache" data-s=""></style><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.Ft2Zxbhr.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.bsVAaBS1.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.DJsqD2Sc.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.BOafPwIE.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.CIizdLeb.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.Egabyb7u.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/InputInstructions.Bzb0MCfv.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/useBasicWidgetState.DzKGLAv_.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/FormClearHelper.CA_5b-Ut.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/useUpdateUiValue.Bk5OIXup.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/inputUtils.CptNuJwn.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/uniqueId.BUj-C6GA.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/input.Cf97CQME.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/base-input.avGkArOc.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.Cptu1tS-.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/iconPosition.7Qt6oUiI.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.DVtfSohT.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.DxQuXlXH.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/IFrameUtil.DefezniK.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:8503/static/js/index.B_ylV_tl.js"></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class=""><div class="withScreencast" data-testid="stScreencast"><div class="stApp stAppEmbeddingId-tagcs2egcvco streamlit-wide st-emotion-cache-13k62yr e1vju3fw0" data-testid="stApp" data-test-script-state="notRunning" data-test-connection-state="CONNECTED"><div class="stAppViewContainer appview-container st-emotion-cache-1yiq2ps e1td4qo60" data-testid="stAppViewContainer" data-layout="wide"><section class="stSidebar st-emotion-cache-uy1txh e3rr4jk0" data-testid="stSidebar" aria-expanded="true" style="position: relative; user-select: auto; width: 300px; height: auto; box-sizing: border-box; flex-shrink: 0;"><div data-testid="stSidebarContent" class="st-emotion-cache-1csi29a e3rr4jk2"><div data-testid="stSidebarHeader" class="st-emotion-cache-10p9htt e3rr4jk4"><div data-testid="stLogoSpacer" class="st-emotion-cache-11ukie e3rr4jk8"></div><div data-testid="stSidebarCollapseButton" class="st-emotion-cache-13veyas e3rr4jk9"><button kind="headerNoPadding" data-testid="stBaseButton-headerNoPadding" aria-label="" class="st-emotion-cache-qv0bt3 e27ue8x15"><span color="rgba(250, 250, 250, 0.6)" class="st-emotion-cache-2x5h05 emntfgb2"><span color="rgba(250, 250, 250, 0.6)" data-testid="stIconMaterial" translate="no" class="st-emotion-cache-12bp31y exvv1vr0">keyboard_double_arrow_left</span></span></button></div></div><div data-testid="stSidebarUserContent" class="st-emotion-cache-1r1cntt e3rr4jk1"><div class="st-emotion-cache-8atqhb e1td4qo65"><div direction="column" height="auto" class="stVerticalBlock st-emotion-cache-tn0cau e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-1xlyxid eg78z5t0"><div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, rgb(30, 58, 95) 0%, rgb(13, 27, 42) 100%); border-radius: 10px; margin-bottom: 1rem;">
+    <h2 style="margin: 0px; color: rgb(76, 175, 80);">مرحباً 👋</h2>
+    <p style="margin: 0.5rem 0px 0px; color: rgb(250, 250, 250); font-size: 1.2rem;">User 4ae69509</p>
+</div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-1xlyxid eg78z5t0"><div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, rgb(45, 31, 61) 0%, rgb(26, 26, 46) 100%); border-radius: 10px; margin-bottom: 1rem;">
+    <p style="margin: 0px; color: rgb(170, 170, 170); font-size: 0.9rem;">🔥 سلسلة الإنتاجية</p>
+    <h1 style="margin: 0.5rem 0px 0px; color: rgb(255, 152, 0); font-size: 2.5rem;">0</h1>
+    <p style="margin: 0px; color: rgb(136, 136, 136);">يوم متتالي</p>
+</div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-1xlyxid eg78z5t0"><hr></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-1xlyxid eg78z5t0"><h3>📋 القائمة</h3></div></div></div></div><div class="stElementContainer element-container st-key-nav_dashboard st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="primary" data-testid="stBaseButton-primary" aria-label="" class="st-emotion-cache-xyn7cr e27ue8x1"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cqh7k7 eg78z5t0"><p>🏠 لوحة التحكم</p></div></span></div></button></div></div><div class="stElementContainer element-container st-key-nav_log_activity st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-1vrbux e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cqh7k7 eg78z5t0"><p>✏️ تسجيل النشاط</p></div></span></div></button></div></div><div class="stElementContainer element-container st-key-nav_tasks st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-1vrbux e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cqh7k7 eg78z5t0"><p>✅ المهام</p></div></span></div></button></div></div><div class="stElementContainer element-container st-key-nav_analytics st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-1vrbux e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cqh7k7 eg78z5t0"><p>📊 التحليلات</p></div></span></div></button></div></div><div class="stElementContainer element-container st-key-nav_settings st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-1vrbux e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cqh7k7 eg78z5t0"><p>⚙️ الإعدادات</p></div></span></div></button></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-1xlyxid eg78z5t0"><hr></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-1vrbux e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cqh7k7 eg78z5t0"><p>🚪 تسجيل الخروج</p></div></span></div></button></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-1xlyxid eg78z5t0"><div style="text-align: center; padding: 1rem; color: rgb(102, 102, 102); font-size: 0.8rem;">
+    <p>متتبع الإنتاجية v1.0</p>
+</div></div></div></div></div></div></div></div></div><div><div style="position: absolute; user-select: none; width: 8px; height: 100%; top: 0px; cursor: col-resize; right: -6px;"><div class="st-emotion-cache-1sv6ehc e3rr4jk3"></div></div></div></section><div class="st-emotion-cache-6px8kg e1td4qo610"><header class="stAppHeader st-emotion-cache-1s6ol36 est0q591" data-testid="stHeader"><div class="stAppToolbar st-emotion-cache-14vh5up est0q592" data-testid="stToolbar"><div class="st-emotion-cache-1j22a0y est0q594"><div class="st-emotion-cache-jma0kd est0q595"></div><div class="st-emotion-cache-scp8yw est0q596"><div class="stToolbarActions st-emotion-cache-1p1m4ay eyud7442" data-testid="stToolbarActions"></div><div class="stAppDeployButton" data-testid="stAppDeployButton"><button kind="header" data-testid="stBaseButton-header" aria-label="" class="st-emotion-cache-1ch17l9 e27ue8x14"><div class="st-emotion-cache-1wbqy5l e19wr9s00"><span>Deploy</span></div></button></div><span id="MainMenu" class="stMainMenu st-emotion-cache-czk5ss e1vxtby88" data-testid="stMainMenu" aria-haspopup="true" aria-expanded="false"><button kind="headerNoPadding" data-testid="stBaseButton-headerNoPadding" aria-label="" class="st-emotion-cache-qv0bt3 e27ue8x15"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="emntfgb1 st-emotion-cache-nsoqg8 ex0cdmw0"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></button></span></div></div></div></header><section tabindex="0" class="stMain st-emotion-cache-4rsbii e1td4qo61" data-testid="stMain"><div class="stMainBlockContainer block-container st-emotion-cache-zy6yx3 e1td4qo64" data-testid="stMainBlockContainer"><div direction="column" height="auto" class="stVerticalBlock st-emotion-cache-tn0cau e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlx1MDY0NVx1MDYyYVx1MDYyYVx1MDYyOFx1MDYzOSBcdTA2MjdcdTA2NDRcdTA2MjVcdTA2NDZcdTA2MmFcdTA2MjdcdTA2MmNcdTA2NGFcdTA2MjkiLCAic2hvcnRfbmFtZSI6ICJQcm9UcmFja2VyIiwgInN0YXJ0X3VybCI6ICIvIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwZTExMTciLCAidGhlbWVfY29sb3IiOiAiIzI4YTc0NSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdC1wcmltYXJ5IiwgImljb25zIjogW3sic3JjIjogInN0YXRpYy9pY29uLnBuZyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIn0sIHsic3JjIjogInN0YXRpYy9pY29uLTUxMi5wbmciLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=">
+<meta name="theme-color" content="#28a745">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><style>/* 
+تنسيقات مخصصة لتطبيق متتبع الإنتاجية
+Custom Styles for Productivity Tracker
+*/
+
+/* دعم RTL للعربية */
+.main .block-container {
+    direction: rtl;
+    text-align: right;
+}
+
+/* الخط العربي */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+/* منع كسر الكلمات العربية */
+p,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button {
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+}
+
+/* النصوص القصيرة لا تنكسر أبداً */
+.stButton>button,
+[data-testid="stMarkdownContainer"] div,
+[data-testid="stMarkdownContainer"] p {
+    white-space: normal;
+    word-break: keep-all;
+}
+
+/* إخفاء عناصر Streamlit غير الضرورية مع الحفاظ على زر الشريط الجانبي */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+/* إخفاء شعار Streamlit فقط وليس الهيدر بالكامل */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    backdrop-filter: none !important;
+}
+
+/* إبقاء زر فتح الشريط الجانبي مرئياً */
+button[kind="header"] {
+    visibility: visible !important;
+}
+
+[data-testid="collapsedControl"] {
+    visibility: visible !important;
+    display: flex !important;
+}
+
+/* تنسيق الأزرار */
+.stButton>button {
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* أزرار التقييم */
+.score-button-0 {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%) !important;
+}
+
+.score-button-1 {
+    background: linear-gradient(135deg, #fd7e14 0%, #e55a00 100%) !important;
+}
+
+.score-button-2 {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%) !important;
+}
+
+.score-button-3 {
+    background: linear-gradient(135deg, #90EE90 0%, #5cb85c 100%) !important;
+}
+
+.score-button-4 {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+/* الشريط الجانبي */
+.css-1d391kg {
+    direction: rtl;
+    text-align: right;
+}
+
+[data-testid="stSidebar"] {
+    direction: rtl;
+}
+
+[data-testid="stSidebar"] .block-container {
+    direction: rtl;
+    text-align: right;
+}
+
+/* البطاقات */
+.stat-card {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0d1b2a 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* شريط التقدم */
+.progress-bar {
+    background: #333;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* التبويبات */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* الجداول */
+.stDataFrame {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* حقول الإدخال */
+.stTextInput>div>div>input {
+    border-radius: 10px;
+    direction: rtl;
+}
+
+.stSelectbox>div>div {
+    border-radius: 10px;
+}
+
+/* الرسائل */
+.stSuccess,
+.stError,
+.stWarning,
+.stInfo {
+    border-radius: 10px;
+}
+
+/* تأثيرات الحركة */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.element-container {
+    animation: fadeIn 0.3s ease;
+}
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #45a049;
+}
+
+/* تنسيق الـ Heatmap */
+.heatmap-cell {
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.heatmap-cell:hover {
+    transform: scale(1.1);
+}
+
+/* شبكة اليوم */
+.day-grid-cell {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.day-grid-cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================= */
+/* التصميم المتجاوب - Responsive Design */
+/* ============================================= */
+
+/* شاشات التابلت (أقل من 992px) */
+@media (max-width: 992px) {
+    .main .block-container {
+        padding: 1rem !important;
+    }
+
+    /* تصغير الخطوط */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    /* البطاقات */
+    .stat-card {
+        padding: 1rem;
+    }
+
+    /* التبويبات */
+    .stTabs [data-baseweb="tab"] {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* شاشات الموبايل (أقل من 768px) */
+@media (max-width: 768px) {
+
+    /* إخفاء الشريط الجانبي تلقائياً */
+    [data-testid="stSidebar"] {
+        width: 100% !important;
+    }
+
+    .main .block-container {
+        padding: 0.5rem !important;
+    }
+
+    /* تصغير الخطوط أكثر */
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+
+    h3 {
+        font-size: 1.1rem !important;
+    }
+
+    h4 {
+        font-size: 1rem !important;
+    }
+
+    p {
+        font-size: 0.9rem !important;
+    }
+
+    /* الأزرار */
+    .stButton>button {
+        padding: 0.8rem 1rem !important;
+        font-size: 0.9rem !important;
+        min-height: 60px;
+    }
+
+    /* جعل الأعمدة تتكدس فوق بعضها */
+    [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap !important;
+    }
+
+    [data-testid="stHorizontalBlock"]>div {
+        flex: 1 1 45% !important;
+        min-width: 140px !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    /* البطاقات على الموبايل */
+    .stat-card {
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* التبويبات على الموبايل */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 5px;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* =========================================
+   تحسينات الواجهة الجديدة (Frontend Polish)
+   ========================================= */
+
+/* 1. القيم المتغيرة (Variables) */
+:root {
+    --primary-color: #4CAF50;
+    --bg-dark: #0e1117;
+    --glass-bg: rgba(26, 26, 46, 0.6);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* 2. شريط التمرير المخصص (Custom Scrollbar) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* 3. تأثير الزجاج (Glassmorphism) للكروت */
+div[data-testid="stMarkdownContainer"]>div {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: var(--glass-border);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div[data-testid="stMarkdownContainer"]>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* 4. حركات الدخول (Entrance Animations) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+/* تطبيق الحركات */
+.stApp {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* كروت الإحصائيات تظهر من الأسفل */
+div[data-testid="column"] {
+    animation: slideUp 0.6s ease-out both;
+}
+
+div[data-testid="column"]:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+div[data-testid="column"]:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+div[data-testid="column"]:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+div[data-testid="column"]:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* 5. تحسين حقول الإدخال (Inputs Polish) */
+input[type="text"],
+.stSelectbox>div>div {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+.stSelectbox>div>div:focus-within {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 6. تحسين الأزرار (Buttons Micro-interactions) */
+.stButton>button {
+    border: none !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.stButton>button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.stButton>button:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* زر "سجّل الآن" العائم ينبض */
+#sticky-log-btn {
+    animation: pulse-glow 2s infinite;
+}
+
+/* شاشات الموبايل الصغيرة (أقل من 480px) */
+@media (max-width: 480px) {
+    .main .block-container {
+        padding: 0.3rem !important;
+    }
+
+    h1 {
+        font-size: 1.3rem !important;
+    }
+
+    h2 {
+        font-size: 1.1rem !important;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    /* الأزرار */
+    .stButton>button {
+        padding: 0.6rem 0.8rem !important;
+        font-size: 0.8rem !important;
+        min-height: 50px;
+    }
+
+    /* جعل الأعمدة فوق بعضها */
+    [data-testid="stHorizontalBlock"]>div {
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+    }
+
+    /* تصغير شبكة اليوم */
+    .day-grid-cell {
+        padding: 0.3rem !important;
+        font-size: 0.7rem !important;
+    }
+
+    /* الموقت */
+    #countdown-timer {
+        font-size: 1.2rem !important;
+    }
+
+    /* إخفاء بعض العناصر غير الضرورية */
+    small {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* تحسينات إضافية للموبايل */
+@media (max-width: 768px) {
+
+    /* جعل الـ selectbox أكبر للمس */
+    .stSelectbox>div {
+        min-height: 45px;
+    }
+
+    /* جعل الـ inputs أكبر */
+    .stTextInput>div>div>input {
+        min-height: 45px;
+        font-size: 1rem !important;
+    }
+
+    /* تحسين المسافات */
+    hr {
+        margin: 1rem 0 !important;
+    }
+
+    /* تحسين الـ expander */
+    .streamlit-expanderHeader {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* تحسين اللمس على الشاشات اللمسية */
+@media (pointer: coarse) {
+    .stButton>button {
+        min-height: 48px;
+        min-width: 48px;
+    }
+
+    .stSelectbox>div {
+        min-height: 48px;
+    }
+}
+
+/* تنسيق خاص للطباعة */
+@media print {
+    [data-testid="stSidebar"] {
+        display: none !important;
+    }
+
+    .stButton {
+        display: none !important;
+    }
+
+    .main .block-container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+}</style></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h1 id="lwht-althkm" aria-labelledby=":r5:" style="text-align: center; color: rgb(76, 175, 80); margin-bottom: 0px;"><span id=":r5:">
+    🎯 لوحة التحكم
+</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#lwht-althkm" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h1></div>
+<p style="text-align: center; color: rgb(136, 136, 136); margin-top: 0.5rem;">
+    سجّل إنتاجيتك بنقرة واحدة
+</p></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-1syk1kn e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="120px" overflow="visible"><iframe class="stIFrame st-emotion-cache-fsrfgf eu9re3w0" data-testid="stIFrame" allow="accelerometer; ambient-light-sensor; autoplay; battery; camera; clipboard-write; document-domain; encrypted-media; fullscreen; geolocation; gyroscope; layout-animations; legacy-image-formats; magnetometer; microphone; midi; oversized-images; payment; picture-in-picture; publickey-credentials-get; sync-xhr; usb; vr ; wake-lock; xr-spatial-tracking" srcdoc="
+    &lt;div style=&quot;background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 1rem; border-radius: 15px; text-align: center; font-family: 'Tajawal', sans-serif;&quot;&gt;
+        &lt;div style=&quot;display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap;&quot;&gt;
+            &lt;div&gt;
+                &lt;p style=&quot;color: #888; margin: 0; font-size: 0.8rem;&quot;&gt;⏰ الفترة الحالية&lt;/p&gt;
+                &lt;p style=&quot;color: #4CAF50; margin: 0; font-size: 1.2rem; font-weight: bold;&quot;&gt;16:00 - 16:30&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;timer-box&quot; style=&quot;background: #0d1b2a; padding: 1rem 2rem; border-radius: 10px; border: 2px solid #4CAF50;&quot;&gt;
+                &lt;p style=&quot;color: #888; margin: 0; font-size: 0.8rem;&quot;&gt;⏳ الوقت المتبقي&lt;/p&gt;
+                &lt;p id=&quot;countdown-timer&quot; style=&quot;color: #ffc107; margin: 0; font-size: 1.8rem; font-weight: bold; font-family: monospace;&quot;&gt;
+                    --:--
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p id=&quot;alert-msg&quot; style=&quot;display: none; color: #ff6b6b; margin: 0.5rem 0 0 0; font-size: 0.9rem; font-weight: bold;&quot;&gt;
+            🔔 الفترة السابقة لم تُسجَّل بعد! سجّل الآن لإيقاف المنبه
+        &lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;style&gt;
+        @keyframes flash {
+            0%, 100% { border-color: #ff4444; }
+            50% { border-color: #ffc107; }
+        }
+        .timer-alert {
+            animation: flash 0.5s ease-in-out infinite;
+        }
+    &lt;/style&gt;
+    
+    &lt;script&gt;
+    (function() {
+        var endTime = 1771079400000;
+        var alertStarted = false;
+        var alertInterval = null;
+        var shouldAlertFromServer = false;
+        
+        // طلب إذن الإشعارات عند التحميل
+        if ('Notification' in window &amp;&amp; Notification.permission === 'default') {
+            Notification.requestPermission();
+        }
+        
+        // إنشاء صوت تنبيه
+        function playAlertSound() {
+            try {
+                var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                var osc1 = audioCtx.createOscillator();
+                var gain1 = audioCtx.createGain();
+                osc1.connect(gain1);
+                gain1.connect(audioCtx.destination);
+                osc1.frequency.value = 800;
+                gain1.gain.value = 0.3;
+                osc1.start();
+                osc1.stop(audioCtx.currentTime + 0.15);
+                
+                setTimeout(function() {
+                    var osc2 = audioCtx.createOscillator();
+                    var gain2 = audioCtx.createGain();
+                    osc2.connect(gain2);
+                    gain2.connect(audioCtx.destination);
+                    osc2.frequency.value = 1000;
+                    gain2.gain.value = 0.3;
+                    osc2.start();
+                    osc2.stop(audioCtx.currentTime + 0.15);
+                }, 200);
+                
+                setTimeout(function() {
+                    var osc3 = audioCtx.createOscillator();
+                    var gain3 = audioCtx.createGain();
+                    osc3.connect(gain3);
+                    gain3.connect(audioCtx.destination);
+                    osc3.frequency.value = 1200;
+                    gain3.gain.value = 0.3;
+                    osc3.start();
+                    osc3.stop(audioCtx.currentTime + 0.3);
+                }, 400);
+            } catch(e) {}
+        }
+        
+        // إرسال إشعار المتصفح
+        function sendNotification() {
+            if ('Notification' in window &amp;&amp; Notification.permission === 'granted') {
+                var n = new Notification('⏰ انتهت الفترة!', {
+                    body: 'سجّل إنتاجيتك لإيقاف المنبه!',
+                    icon: '⏰',
+                    tag: 'timer-alert',
+                    requireInteraction: true
+                });
+                setTimeout(function() { n.close(); }, 8000);
+            }
+        }
+        
+        // بدء المنبه المتكرر
+        function startPersistentAlert() {
+            if (alertStarted) return;
+            alertStarted = true;
+            
+            var alertMsg = document.getElementById('alert-msg');
+            if (alertMsg) alertMsg.style.display = 'block';
+            
+            // أول رنين فوراً
+            playAlertSound();
+            sendNotification();
+            
+            // تكرار كل 8 ثوانٍ حتى يُسجَّل
+            alertInterval = setInterval(function() {
+                playAlertSound();
+            }, 8000);
+        }
+        
+        // إذا السيرفر يقول الفترة السابقة غير مسجلة والوقت انتهى
+        if (shouldAlertFromServer) {
+            startPersistentAlert();
+        }
+        
+        function updateTimer() {
+            var timerElement = document.getElementById('countdown-timer');
+            var timerBox = document.getElementById('timer-box');
+            if (!timerElement) return;
+            
+            var now = Date.now();
+            var remaining = endTime - now;
+            
+            if (remaining &lt;= 0) {
+                timerElement.innerHTML = '00:00 ⏰';
+                timerElement.style.color = '#ff4444';
+                if (timerBox) timerBox.classList.add('timer-alert');
+                
+                // بدء المنبه عند انتهاء العد التنازلي
+                startPersistentAlert();
+                return;
+            }
+            
+            var totalSeconds = Math.floor(remaining / 1000);
+            var minutes = Math.floor(totalSeconds / 60);
+            var seconds = totalSeconds % 60;
+            
+            var minStr = minutes &lt; 10 ? '0' + minutes : minutes;
+            var secStr = seconds &lt; 10 ? '0' + seconds : seconds;
+            timerElement.innerHTML = minStr + ':' + secStr;
+            
+            if (minutes &lt; 2) {
+                timerElement.style.color = '#ff6b6b';
+            } else {
+                timerElement.style.color = '#ffc107';
+            }
+        }
+        
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    })();
+    &lt;/script&gt;
+    " scrolling="no" sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads" title="st.iframe"></iframe></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-13tbzbm e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: linear-gradient(135deg, rgb(30, 58, 95) 0%, rgb(13, 27, 42) 100%); padding: 1.5rem; border-radius: 15px; text-align: center;">
+    <p style="color: rgb(136, 136, 136); margin: 0px; font-size: 0.9rem;">📊 النقاط اليومية</p>
+    <div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h2 id="0" aria-labelledby=":r12:" style="color: rgb(76, 175, 80); margin: 0.5rem 0px 0px; font-size: 2rem;"><span id=":r12:">0</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#0" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h2></div>
+    <p style="color: rgb(102, 102, 102); margin: 0px; font-size: 0.8rem;">من 100</p>
+</div></div></div></div></div></div></div><div class="stColumn st-emotion-cache-13tbzbm e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: linear-gradient(135deg, rgb(45, 31, 61) 0%, rgb(26, 26, 46) 100%); padding: 1.5rem; border-radius: 15px; text-align: center;">
+    <p style="color: rgb(136, 136, 136); margin: 0px; font-size: 0.9rem;">✅ الفترات المسجلة</p>
+    <div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h2 id="0" aria-labelledby=":r13:" style="color: rgb(156, 39, 176); margin: 0.5rem 0px 0px; font-size: 2rem;"><span id=":r13:">0</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#0" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h2></div>
+    <p style="color: rgb(102, 102, 102); margin: 0px; font-size: 0.8rem;">من 48 فترة</p>
+</div></div></div></div></div></div></div><div class="stColumn st-emotion-cache-13tbzbm e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: linear-gradient(135deg, rgb(31, 61, 45) 0%, rgb(26, 46, 26) 100%); padding: 1.5rem; border-radius: 15px; text-align: center;">
+    <p style="color: rgb(136, 136, 136); margin: 0px; font-size: 0.9rem;">📈 متوسط التقييم</p>
+    <div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h2 id="0-0" aria-labelledby=":r14:" style="color: rgb(76, 175, 80); margin: 0.5rem 0px 0px; font-size: 2rem;"><span id=":r14:">0.0</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#0-0" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h2></div>
+    <p style="color: rgb(102, 102, 102); margin: 0px; font-size: 0.8rem;">من 4</p>
+</div></div></div></div></div></div></div><div class="stColumn st-emotion-cache-13tbzbm e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: linear-gradient(135deg, rgb(61, 45, 31) 0%, rgb(46, 42, 26) 100%); padding: 1.5rem; border-radius: 15px; text-align: center;">
+    <p style="color: rgb(136, 136, 136); margin: 0px; font-size: 0.9rem;">🎯 المتبقي للهدف</p>
+    <div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h2 id="100" aria-labelledby=":r15:" style="color: rgb(255, 152, 0); margin: 0.5rem 0px 0px; font-size: 2rem;"><span id=":r15:">100</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#100" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h2></div>
+    <p style="color: rgb(102, 102, 102); margin: 0px; font-size: 0.8rem;">نقطة</p>
+</div></div></div></div></div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><br></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-f1x5zv e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="text-align: center; padding: 1rem;">
+    <svg width="140" height="140" viewBox="0 0 120 120">
+        <circle cx="60" cy="60" r="54" fill="none" stroke="#333" stroke-width="8"></circle>
+        <circle cx="60" cy="60" r="54" fill="none" stroke="#fd7e14" stroke-width="8" stroke-linecap="round" stroke-dasharray="339.29172" stroke-dashoffset="339.29172" transform="rotate(-90 60 60)" style="transition: stroke-dashoffset 0.8s;"></circle>
+        <text x="60" y="55" text-anchor="middle" fill="#fd7e14" font-size="22" font-weight="bold">0%</text>
+        <text x="60" y="75" text-anchor="middle" fill="#888" font-size="10">الهدف اليومي</text>
+    </svg>
+</div></div></div></div></div></div></div><div class="stColumn st-emotion-cache-1oxrzg e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: linear-gradient(135deg, rgb(26, 26, 46) 0%, rgb(22, 33, 62) 100%); padding: 1.5rem; border-radius: 15px; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+    <p style="color: rgb(136, 136, 136); margin: 0px 0px 0.5rem; font-size: 0.9rem;">📊 مقارنة مع الأمس</p>
+    <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 1rem;">
+        <div style="text-align: center;">
+            <p style="color: rgb(102, 102, 102); margin: 0px; font-size: 0.8rem;">الأمس</p>
+            <p style="color: rgb(255, 152, 0); margin: 0px; font-size: 1.5rem; font-weight: bold;">0</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="color: rgb(136, 136, 136); margin: 0px; font-size: 1.8rem;">➡️</p>
+            <p style="color: rgb(136, 136, 136); margin: 0px; font-size: 0.9rem; font-weight: bold;">0</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="color: rgb(102, 102, 102); margin: 0px; font-size: 0.8rem;">اليوم</p>
+            <p style="color: rgb(76, 175, 80); margin: 0px; font-size: 1.5rem; font-weight: bold;">0</p>
+        </div>
+    </div>
+    <p style="color: rgb(170, 170, 170); margin: 0px; text-align: center; font-size: 0.85rem;">
+        🟰 نفس مستوى الأمس
+    </p>
+</div></div></div></div></div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><hr></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div id="rating-section"></div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="text-align: center; margin-bottom: 1rem;">
+    <div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h3 id="alftrt-alsabqt" aria-labelledby=":r16:" style="color: rgb(255, 152, 0); margin-bottom: 0.5rem;"><span id=":r16:">✏️ تعديل فترة</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#alftrt-alsabqt" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h3></div>
+    <p style="font-size: 1.5rem; color: rgb(250, 250, 250); margin: 0px;">00:00 - 00:30</p>
+    <span style="color: rgb(136, 136, 136);">غير مسجلة</span>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-cancel_edit st-emotion-cache-zh2fnc e12zf7d51" data-testid="stElementContainer" data-stale="false" width="fit-content" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>❌ إلغاء التحديد</p></div></span></div></button></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1oxrzg e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-key-dashboard_category st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stSelectbox" data-testid="stSelectbox"><label data-testid="stWidgetLabel" class="st-emotion-cache-1weic72 e1kt9bl70"><span aria-hidden="true"><div data-testid="stMarkdownContainer" class="st-emotion-cache-9d2g0y eg78z5t0"><p>📁 الفئة</p></div></span></label><div data-baseweb="select" class="st-ae st-af st-ag st-ds st-ai st-aj st-bp st-bb st-b8"><div class="st-au st-ax st-av st-aw st-bp st-d1 st-b8 st-b3 st-b4 st-dm st-d2 st-d3 st-d4 st-d5 st-d6 st-d7 st-d8 st-d9 st-ej st-b1 st-db st-cy st-dc st-dd st-de st-df st-dg st-ci"><div class="st-bp st-bb st-bd st-ek st-el st-b3 st-br st-bc st-d1 st-do st-dp st-dq st-dr"><div value="💼 العمل" class="st-em st-bp st-b6 st-en st-dl st-d1 st-eo st-cj st-ep">💼 العمل</div><div class="st-bb st-dz st-dl st-dj st-c0 st-c1 st-c2 st-c3 st-ay st-bp st-c8 st-ar st-as st-eq st-b5 st-bt st-bv st-bs st-bu st-am st-er"><input aria-autocomplete="list" aria-expanded="false" aria-haspopup="listbox" aria-label="Selected 💼 العمل. 📁 الفئة" role="combobox" tabindex="0" class="st-ae st-af st-cg st-ds st-ai st-aj st-cy st-es st-f4 st-dl st-c5 st-c0 st-c1 st-c2 st-c3 st-ay st-dz st-c8 st-ar st-as st-b6 st-b5 st-bt st-bv st-bs st-bu" value=""><div class="st-ae st-af st-cg st-ds st-ai st-aj st-co st-eu st-ev st-ew st-ex st-ey st-ez"></div></div></div><div class="st-bp st-bb st-b3 st-f0 st-br st-f1 st-dr"><svg data-baseweb="icon" title="open" viewBox="0 0 24 24" class="st-dz st-e0 st-cy st-f2 st-f3"><title>open</title><path transform="rotate(270, 12, 12)" fill-rule="evenodd" clip-rule="evenodd" d="M9 12C9 12.2652 9.10536 12.5196 9.29289 12.7071L13.2929 16.7071C13.6834 17.0976 14.3166 17.0976 14.7071 16.7071C15.0976 16.3166 15.0976 15.6834 14.7071 15.2929L11.4142 12L14.7071 8.70711C15.0976 8.31658 15.0976 7.68342 14.7071 7.29289C14.3166 6.90237 13.6834 6.90237 13.2929 7.29289L9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12Z"></path></svg></div></div></div></div></div></div></div><div class="stColumn st-emotion-cache-f1x5zv e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h4 id="akhtr-mstwa-alantajyt" aria-labelledby=":r19:" style="text-align: center; color: rgb(136, 136, 136);"><span id=":r19:">اختر مستوى الإنتاجية:</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#akhtr-mstwa-alantajyt" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h4></div></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-ukvpxj e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-key-quick_score_0 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>😴
+0
+لا إنتاجية</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-ukvpxj e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-key-quick_score_1 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>😐
+1
+منخفضة</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-ukvpxj e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-key-quick_score_2 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>🙂
+2
+متوسطة</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-ukvpxj e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-key-quick_score_3 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>😊
+3
+عالية</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-ukvpxj e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-key-quick_score_4 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="primary" data-testid="stBaseButton-primary" aria-label="" class="st-emotion-cache-xyn7cr e27ue8x1"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>🔥
+4
+ذروة الأداء</p></div></span></div></button></div></div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><hr></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div data-testid="stHeadingWithActionElements" class="st-emotion-cache-k32df3 eg78z5t2"><h3 id="mlkhs-alywm" aria-labelledby=":r1a:"><span id=":r1a:">📅 ملخص اليوم</span><span data-testid="stHeaderActionElements" class="st-emotion-cache-gi0tri eg78z5t3"><a href="#mlkhs-alywm" aria-label="Link to heading" class="st-emotion-cache-1kxutg5 eg78z5t1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></span></h3></div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><p><small style="color: rgb(136, 136, 136);">💡 اضغط على أي فترة لتسجيلها أو تعديلها</small></p></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-6zw7lf e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="0px" overflow="visible"><iframe class="stIFrame st-emotion-cache-fsrfgf eu9re3w0" data-testid="stIFrame" allow="accelerometer; ambient-light-sensor; autoplay; battery; camera; clipboard-write; document-domain; encrypted-media; fullscreen; geolocation; gyroscope; layout-animations; legacy-image-formats; magnetometer; microphone; midi; oversized-images; payment; picture-in-picture; publickey-credentials-get; sync-xhr; usb; vr ; wake-lock; xr-spatial-tracking" srcdoc="
+        &lt;script&gt;
+        (function() {
+            var target = window.parent.document.getElementById('rating-section');
+            if (target) {
+                setTimeout(function() {
+                    target.scrollIntoView({behavior: 'smooth', block: 'start'});
+                }, 300);
+            }
+        })();
+        &lt;/script&gt;
+        " scrolling="no" sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads" title="st.iframe"></iframe></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(255, 193, 7); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">0:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_0 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">0:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_1 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">1:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_2 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">1:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_3 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">2:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_4 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">2:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_5 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">3:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_6 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">3:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_7 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">4:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_8 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">4:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_9 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">5:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_10 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">5:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_11 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">6:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_12 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">6:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_13 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">7:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_14 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">7:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_15 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">8:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_16 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">8:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_17 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">9:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_18 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">9:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_19 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">10:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_20 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">10:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_21 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">11:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_22 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">11:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_23 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">12:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_24 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">12:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_25 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">13:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_26 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">13:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_27 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">14:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_28 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">14:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_29 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">15:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_30 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">15:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_31 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(76, 175, 80); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">16:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_32 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">16:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_33 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">17:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_34 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">17:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_35 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">18:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_36 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">18:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_37 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">19:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_38 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">19:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_39 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div></div></div><div data-testid="stLayoutWrapper" width="100%" height="auto" overflow="visible" class="st-emotion-cache-18kf3ut e12zf7d54"><div direction="row" overflow="visible" height="auto" class="stHorizontalBlock st-emotion-cache-1permvm e12zf7d53" data-testid="stHorizontalBlock" data-test-scroll-behavior="normal"><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">20:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_40 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">20:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_41 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">21:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_42 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">21:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_43 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">22:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_44 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">22:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_45 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">23:00</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_46 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div><div class="stColumn st-emotion-cache-1agm1f2 e12zf7d52" data-testid="stColumn"><div direction="column" height="100%" class="stVerticalBlock st-emotion-cache-wfksaw e12zf7d53" data-testid="stVerticalBlock"><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="background: rgb(26, 26, 26); border: 1px solid rgb(51, 51, 51); border-radius: 8px; padding: 4px; text-align: center; margin-bottom: 4px; min-height: 55px; display: flex; flex-direction: column; justify-content: center; opacity: 0.6;">
+    <div style="font-size: 0.7rem; color: rgb(102, 102, 102);">23:30</div>
+    <div style="font-size: 1rem; color: rgb(68, 68, 68);">·</div>
+</div></div></div></div></div><div class="stElementContainer element-container st-key-grid_47 st-emotion-cache-1vo6xi6 e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stButton st-emotion-cache-8atqhb ew64v8o0" data-testid="stButton"><button kind="secondary" data-testid="stBaseButton-secondary" aria-label="" class="st-emotion-cache-xwldz e27ue8x2"><div class="st-emotion-cache-1lads1q e27ue8x22"><span data-has-shortcut="false" class="st-emotion-cache-1kl7f1u e27ue8x23"><div data-testid="stMarkdownContainer" class="st-emotion-cache-13gob2s eg78z5t0"><p>📝</p></div></span></div></button></div></div></div></div></div></div><div class="stElementContainer element-container st-emotion-cache-6zw7lf e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="0px" overflow="visible"><iframe class="stIFrame st-emotion-cache-fsrfgf eu9re3w0" data-testid="stIFrame" allow="accelerometer; ambient-light-sensor; autoplay; battery; camera; clipboard-write; document-domain; encrypted-media; fullscreen; geolocation; gyroscope; layout-animations; legacy-image-formats; magnetometer; microphone; midi; oversized-images; payment; picture-in-picture; publickey-credentials-get; sync-xhr; usb; vr ; wake-lock; xr-spatial-tracking" srcdoc="
+    &lt;div id=&quot;sticky-log-btn&quot; style=&quot;
+        position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+        z-index: 9999; 
+        background: linear-gradient(135deg, #4CAF50, #4CAF50cc);
+        color: white; padding: 12px 28px; border-radius: 50px;
+        font-family: 'Tajawal', sans-serif; font-size: 1rem; font-weight: bold;
+        cursor: pointer; box-shadow: 0 4px 15px #4CAF5066;
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-align: center;
+    &quot; onclick=&quot;window.parent.document.querySelector('[id*=rating-section]')?.scrollIntoView({behavior: 'smooth'})&quot;
+       onmouseover=&quot;this.style.transform='translateX(-50%) scale(1.05)'; this.style.boxShadow='0 6px 20px #4CAF5088'&quot;
+       onmouseout=&quot;this.style.transform='translateX(-50%) scale(1)'; this.style.boxShadow='0 4px 15px #4CAF5066'&quot;
+    &gt;
+        ⚡ سجّل الفترة السابقة
+    &lt;/div&gt;
+    " scrolling="no" sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads" title="st.iframe"></iframe></div><div class="stElementContainer element-container st-emotion-cache-3pwa5w e12zf7d51" data-testid="stElementContainer" data-stale="false" width="100%" height="auto" overflow="visible"><div class="stMarkdown" data-testid="stMarkdown"><div class="st-emotion-cache-6c7yup e96ujdg2"><div data-testid="stMarkdownContainer" class="st-emotion-cache-cb5xy7 eg78z5t0"><div style="text-align: center; padding: 2rem; margin-top: 3rem; border-top: 1px solid rgb(51, 51, 51); color: rgb(136, 136, 136);">
+    <p style="margin: 0px; font-size: 1rem;">
+        Made by <span style="color: rgb(76, 175, 80); font-weight: bold; font-size: 1.2rem;">MOOSTAFA</span>
+    </p>
+    <p style="margin: 0.5rem 0px 0px; font-size: 0.8rem; color: rgb(102, 102, 102);">
+        متتبع الإنتاجية v1.0 | 2026
+    </p>
+</div></div></div></div></div></div></div><div data-testid="stAppIframeResizerAnchor" data-iframe-height="true" class="st-emotion-cache-1dumvfu e1td4qo69"></div></section></div></div></div></div><div data-testid="portal" id="portal" class="st-emotion-cache-boztmw eaoz1g71"></div></div><div class=""></div></div>
+  
+
+</body></html>
