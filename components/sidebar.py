@@ -59,6 +59,7 @@ def render_sidebar():
             "تسجيل النشاط": "log_activity",
             "المهام": "tasks",
             "التحليلات": "analytics",
+            "المتصدرين": "leaderboard",
             "الإعدادات": "settings"
         }
         
@@ -67,6 +68,7 @@ def render_sidebar():
             "تسجيل النشاط": "✏️",
             "المهام": "✅",
             "التحليلات": "📊",
+            "المتصدرين": "🏆",
             "الإعدادات": "⚙️"
         }
         
@@ -97,7 +99,7 @@ def render_sidebar():
         # معلومات التطبيق
         st.markdown("""
         <div style="text-align: center; padding: 1rem; color: #666; font-size: 0.8rem;">
-            <p>متتبع الإنتاجية v1.0</p>
+            <p>Tempo 30 v1.0</p>
         </div>
         """, unsafe_allow_html=True)
 

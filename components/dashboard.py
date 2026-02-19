@@ -173,106 +173,11 @@ def render_dashboard():
                 </p>
             </div>
         </div>
-        <p id="alert-msg" style="display: none; color: #ff6b6b; margin: 0.5rem 0 0 0; font-size: 0.9rem; font-weight: bold;">
-            🔔 الفترة السابقة لم تُسجَّل بعد! سجّل الآن لإيقاف المنبه
-        </p>
     </div>
-    
-    <style>
-        @keyframes flash {{
-            0%, 100% {{ border-color: #ff4444; }}
-            50% {{ border-color: #ffc107; }}
-        }}
-        .timer-alert {{
-            animation: flash 0.5s ease-in-out infinite;
-        }}
-    </style>
     
     <script>
     (function() {{
         var endTime = {end_timestamp};
-        var alertStarted = false;
-        var alertInterval = null;
-        var shouldAlertFromServer = {js_should_alert};
-        
-        // طلب إذن الإشعارات عند التحميل
-        if ('Notification' in window && Notification.permission === 'default') {{
-            Notification.requestPermission();
-        }}
-        
-        // إنشاء صوت تنبيه
-        function playAlertSound() {{
-            try {{
-                var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                
-                var osc1 = audioCtx.createOscillator();
-                var gain1 = audioCtx.createGain();
-                osc1.connect(gain1);
-                gain1.connect(audioCtx.destination);
-                osc1.frequency.value = 800;
-                gain1.gain.value = 0.3;
-                osc1.start();
-                osc1.stop(audioCtx.currentTime + 0.15);
-                
-                setTimeout(function() {{
-                    var osc2 = audioCtx.createOscillator();
-                    var gain2 = audioCtx.createGain();
-                    osc2.connect(gain2);
-                    gain2.connect(audioCtx.destination);
-                    osc2.frequency.value = 1000;
-                    gain2.gain.value = 0.3;
-                    osc2.start();
-                    osc2.stop(audioCtx.currentTime + 0.15);
-                }}, 200);
-                
-                setTimeout(function() {{
-                    var osc3 = audioCtx.createOscillator();
-                    var gain3 = audioCtx.createGain();
-                    osc3.connect(gain3);
-                    gain3.connect(audioCtx.destination);
-                    osc3.frequency.value = 1200;
-                    gain3.gain.value = 0.3;
-                    osc3.start();
-                    osc3.stop(audioCtx.currentTime + 0.3);
-                }}, 400);
-            }} catch(e) {{}}
-        }}
-        
-        // إرسال إشعار المتصفح
-        function sendNotification() {{
-            if ('Notification' in window && Notification.permission === 'granted') {{
-                var n = new Notification('⏰ انتهت الفترة!', {{
-                    body: 'سجّل إنتاجيتك لإيقاف المنبه!',
-                    icon: '⏰',
-                    tag: 'timer-alert',
-                    requireInteraction: true
-                }});
-                setTimeout(function() {{ n.close(); }}, 8000);
-            }}
-        }}
-        
-        // بدء المنبه المتكرر
-        function startPersistentAlert() {{
-            if (alertStarted) return;
-            alertStarted = true;
-            
-            var alertMsg = document.getElementById('alert-msg');
-            if (alertMsg) alertMsg.style.display = 'block';
-            
-            // أول رنين فوراً
-            playAlertSound();
-            sendNotification();
-            
-            // تكرار كل 8 ثوانٍ حتى يُسجَّل
-            alertInterval = setInterval(function() {{
-                playAlertSound();
-            }}, 8000);
-        }}
-        
-        // إذا السيرفر يقول الفترة السابقة غير مسجلة والوقت انتهى
-        if (shouldAlertFromServer) {{
-            startPersistentAlert();
-        }}
         
         function updateTimer() {{
             var timerElement = document.getElementById('countdown-timer');
@@ -285,10 +190,6 @@ def render_dashboard():
             if (remaining <= 0) {{
                 timerElement.innerHTML = '00:00 ⏰';
                 timerElement.style.color = '#ff4444';
-                if (timerBox) timerBox.classList.add('timer-alert');
-                
-                // بدء المنبه عند انتهاء العد التنازلي
-                startPersistentAlert();
                 return;
             }}
             

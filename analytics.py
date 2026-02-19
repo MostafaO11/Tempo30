@@ -552,3 +552,56 @@ def generate_period_report(logs: List[Dict], daily_goal: int, period_name: str) 
             ((score_dist.get(3, 0) + score_dist.get(4, 0)) / total_entries * 100) if total_entries > 0 else 0, 1
         )
     }
+
+def generate_calendar_data(logs: List[Dict], daily_goal: int, start_date: date, end_date: date) -> Dict:
+    """
+    تجهيز بيانات عرض التقويم
+    """
+    calendar_days = []
+    
+    # تحويل السجلات إلى قاموس للوصول السريع
+    logs_by_date = get_logs_summary_by_date(logs)
+    
+    # إحصائيات
+    achieved_days = 0
+    missed_days = 0
+    vacation_days = 0
+    
+    current_date = start_date
+    today = date.today()
+    
+    while current_date <= end_date:
+        daily_score = logs_by_date.get(current_date, 0)
+        difference = daily_score - daily_goal
+        
+        status = "future"
+        if current_date <= today:
+            if difference >= 0:
+                status = "achieved"
+                achieved_days += 1
+            elif daily_score > 0:
+                status = "missed"
+                missed_days += 1
+            else:
+                status = "vacation"
+                vacation_days += 1
+        
+        calendar_days.append({
+            "date": current_date,
+            "day_name": DAYS_OF_WEEK_AR[current_date.weekday()],
+            "day_num": current_date.day,
+            "score": daily_score,
+            "difference": difference,
+            "status": status
+        })
+        
+        current_date += timedelta(days=1)
+        
+    return {
+        "days": calendar_days,
+        "stats": {
+            "achieved": achieved_days,
+            "missed": missed_days,
+            "vacation": vacation_days
+        }
+    }

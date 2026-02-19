@@ -303,6 +303,35 @@ def add_category(user_id: str, name: str, name_ar: str, color: str, icon: str) -
     except Exception as e:
         return {"status": "error", "message": f"خطأ: {str(e)}"}
 
+def update_category(user_id: str, category_id: str, updates: dict) -> dict:
+    """تحديث بيانات فئة مخصصة"""
+    try:
+        cats_file = _get_categories_file(user_id)
+        if not cats_file.exists():
+            return {"status": "error", "message": "لم يتم العثور على ملف الفئات"}
+            
+        cats = _load_json(cats_file, [])
+        updated = False
+        
+        for cat in cats:
+            if cat.get("id") == category_id:
+                # تحديث الحقول المسموح بها فقط
+                if "name" in updates: cat["name"] = updates["name"]
+                if "name_ar" in updates: cat["name_ar"] = updates["name_ar"]
+                if "color" in updates: cat["color"] = updates["color"]
+                if "icon" in updates: cat["icon"] = updates["icon"]
+                updated = True
+                break
+        
+        if updated:
+            _save_json(cats_file, cats)
+            return {"status": "success", "message": "تم التحديث بنجاح"}
+        else:
+            return {"status": "error", "message": "الفئة غير موجودة"}
+            
+    except Exception as e:
+        return {"status": "error", "message": f"خطأ: {str(e)}"}
+
 def delete_category(category_id: str, user_id: str = None) -> dict:
     """حذف فئة مخصصة"""
     try:

@@ -9,7 +9,7 @@ import os
 os.environ['HOME'] = '/tmp'
 # إعداد الصفحة (يجب أن يكون في البداية)
 st.set_page_config(
-    page_title="متتبع الإنتاجية",
+    page_title="Tempo 30",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -100,17 +100,42 @@ def main():
         render_tasks()
     elif current_page == "analytics":
         render_analytics()
+    elif current_page == "leaderboard":
+        from components.leaderboard_page import render_leaderboard
+        render_leaderboard()
     elif current_page == "settings":
         render_settings()
     else:
         render_dashboard()
+        
+    # حقن المؤقت العالمي للإشعارات (يعمل في الخلفية)
+    from components.global_timer import render_global_timer
+    render_global_timer()
     
     # عرض الفوتر
     render_footer()
 
 def render_footer():
     """عرض الفوتر في أسفل الصفحة"""
-    st.markdown("""
+    import base64
+    
+    # تحميل الشعار
+    logo_path = os.path.join(os.path.dirname(__file__), "static", "logo.png")
+    mime_type = "image/png"
+    
+    if not os.path.exists(logo_path):
+        logo_path = os.path.join(os.path.dirname(__file__), "static", "logo.jpg")
+        mime_type = "image/jpeg"
+    
+    img_tag = ""
+    
+    if os.path.exists(logo_path):
+        with open(logo_path, "rb") as f:
+            encoded = base64.b64encode(f.read()).decode()
+            # تعديل الحجم والمحاذاة ليكون بجوار الاسم
+            img_tag = f'<img src="data:{mime_type};base64,{encoded}" style="height: 35px; vertical-align: middle; margin-left: 10px; border-radius: 5px;">'
+    
+    st.markdown(f"""
     <div style="
         text-align: center;
         padding: 2rem;
@@ -118,11 +143,12 @@ def render_footer():
         border-top: 1px solid #333;
         color: #888;
     ">
-        <p style="margin: 0; font-size: 1rem;">
-            Made by <span style="color: #4CAF50; font-weight: bold; font-size: 1.2rem;">MOOSTAFA</span>
+        <p style="margin: 0; font-size: 1rem; display: flex; align-items: center; justify-content: center;">
+            Made by <span style="color: #4CAF50; font-weight: bold; font-size: 1.2rem; margin: 0 5px;">MOOSTAFA</span>
+            {img_tag}
         </p>
         <p style="margin: 0.5rem 0 0 0; font-size: 0.8rem; color: #666;">
-            متتبع الإنتاجية v1.0 | 2026
+            Tempo 30 v1.0 | 2026
         </p>
     </div>
     """, unsafe_allow_html=True)

@@ -33,8 +33,8 @@ def render_settings():
     </h1>
     """, unsafe_allow_html=True)
     
-    # تبويبات
-    tab1, tab2, tab3, tab4 = st.tabs(["👤 الملف الشخصي", "🎯 الأهداف", "📁 الفئات", "🎨 المظهر"])
+    # تبويبات (تم حذف المظهر الذكي)
+    tab1, tab2, tab3 = st.tabs(["👤 الملف الشخصي", "🎯 الأهداف", "📁 الفئات"])
     
     with tab1:
         render_profile_settings(user)
@@ -44,9 +44,6 @@ def render_settings():
     
     with tab3:
         render_categories_settings(user)
-        
-    with tab4:
-        render_theme_settings(user)
 
 def render_profile_settings(user):
     """إعدادات الملف الشخصي"""
@@ -171,66 +168,6 @@ def render_goals_settings(user):
     - **راقب اتجاهاتك**: استخدم صفحة التحليلات لفهم أنماط إنتاجيتك
     """)
 
-def render_theme_settings(user):
-    """إعدادات المظهر والذكاء الاصطناعي"""
-    
-    st.markdown("### 🎨 المظهر الذكي (AI Themes)")
-    st.markdown("دع الذكاء الاصطناعي يختار مظهر التطبيق بناءً على إنتاجيتك!")
-    
-    # تحميل الثيم الحالي
-    user_dir = _get_categories_file(user.id).parent
-    theme_file = user_dir / "theme.json"
-    current_theme = _load_json(theme_file, {})
-    
-    # مفتاح API
-    api_key = st.text_input(
-        "مفتاح Google Gemini API 🔑",
-        type="password",
-        value=current_theme.get("api_key", ""),
-        help="احصل عليه من: https://aistudio.google.com/app/apikey"
-    )
-    
-    if st.button("✨ توليد ثيم جديد بناءً على أدائي", type="primary", use_container_width=True):
-        if not api_key:
-            st.error("يرجى إدخال مفتاح API أولاً")
-            return
-            
-        with st.spinner("جاري تصميم الثيم... 🎨"):
-            # جلب سياق المستخدم
-            from database import get_logs_by_date
-            from analytics import calculate_daily_score
-            from datetime import date
-            
-            logs = get_logs_by_date(user.id, date.today())
-            score = calculate_daily_score(logs)
-            
-            context = {
-                "score": score,
-                "time_of_day": "morning"  # يمكن تحسينه
-            }
-            
-            from components.ai_theme import generate_ai_theme
-            result = generate_ai_theme(api_key, context)
-            
-            if result["status"] == "success":
-                new_theme = {
-                    "api_key": api_key,
-                    "background": result["background"],
-                    "name": result["theme_name"]
-                }
-                _save_json(theme_file, new_theme)
-                st.success(f"تم تطبيق الثيم: {result['theme_name']}")
-                st.rerun()
-            else:
-                st.error(f"حدث خطأ: {result['message']}")
-    
-    # زر إعادة تعيين
-    if st.button("🔄 العودة للوضع الافتراضي"):
-        if theme_file.exists():
-            os.remove(theme_file)
-            st.success("تمت استعادة الوضع الافتراضي")
-            st.rerun()
-
 def render_categories_settings(user):
     """إعدادات الفئات"""
     
@@ -274,25 +211,48 @@ def render_categories_settings(user):
     
     if custom_cats:
         for idx, cat in enumerate(custom_cats):
-            col1, col2 = st.columns([4, 1])
-            
-            with col1:
-                st.markdown(f"""
-                <div style="background: {cat.get('color', '#4CAF50')}22; border-right: 4px solid {cat.get('color', '#4CAF50')}; border-radius: 10px; padding: 1rem; margin-bottom: 0.5rem;">
-                    <span style="font-size: 1.5rem;">{cat.get('icon', '📌')}</span>
-                    <span style="color: #fafafa; margin-right: 0.5rem;">{cat.get('name_ar', cat.get('name', ''))}</span>
-                </div>
-                """, unsafe_allow_html=True)
-            
-            with col2:
+            with st.container():
+                c1, c2, c3, c4 = st.columns([0.5, 3, 1, 0.5])
+                
                 cat_id = cat.get('id') or f"custom_{idx}"
-                if st.button("🗑️", key=f"del_cat_{cat_id}_{idx}"):
-                    result = delete_category(cat_id, user_id=user.id)
-                    if result["status"] == "success":
-                        st.success("تم الحذف")
-                        st.rerun()
-                    else:
-                        st.error(result["message"])
+                current_color = cat.get('color', '#4CAF50')
+                current_icon = cat.get('icon', '📌')
+                current_name = cat.get('name_ar', cat.get('name', ''))
+                
+                with c1:
+                    st.markdown(f"<div style='font-size: 1.5rem; text-align: center; padding-top: 5px;'>{current_icon}</div>", unsafe_allow_html=True)
+                
+                with c2:
+                    st.markdown(f"<div style='font-size: 1.1rem; padding-top: 10px; color: {current_color}; font-weight: bold;'>{current_name}</div>", unsafe_allow_html=True)
+                
+                with c3:
+                    # تحرير اللون
+                    new_color = st.color_picker(
+                        "تعديل اللون",
+                        value=current_color,
+                        key=f"edit_color_{cat_id}",
+                        label_visibility="collapsed"
+                    )
+                    
+                    if new_color != current_color:
+                        from database import update_category
+                        result = update_category(user.id, cat_id, {"color": new_color})
+                        if result["status"] == "success":
+                            st.toast(f"تم تحديث لون {current_name}")
+                            st.rerun()
+                
+                with c4:
+                    if st.button("🗑️", key=f"del_cat_{cat_id}_{idx}"):
+                        from database import delete_category
+                        result = delete_category(cat_id, user_id=user.id)
+                        if result["status"] == "success":
+                            st.success("تم الحذف")
+                            st.rerun()
+                        else:
+                            st.error(result["message"])
+                
+                st.markdown("<hr style='margin: 0.5rem 0; opacity: 0.1;'>", unsafe_allow_html=True)
+
     else:
         st.info("لا توجد فئات مخصصة حتى الآن")
     
