@@ -485,6 +485,31 @@ def render_day_grid_simple(logs: list, current_slot: int):
         })();
         </script>
         """, height=0)
+
+    # CSS مخصص لتحسين الشبكة على الموبايل
+    st.markdown("""
+    <style>
+    @media (max-width: 768px) {
+        /* استهداف الأعمدة داخل الشبكة فقط */
+        [data-testid="column"] {
+            width: 25% !important;
+            flex: 1 1 25% !important;
+            min-width: 25% !important;
+            padding: 0 2px !important;
+        }
+        
+        /* إعادة تعيين النمط للعناصر الأخرى التي تحتاج عرض كامل */
+        .stat-card, .stTabs, .calendar-grid {
+            width: 100% !important;
+        }
+        
+        /* تصغير حجم النص والأيقونات في الشبكة للموبايل */
+        div[data-testid="column"] > div > div > div {
+            font-size: 0.8rem !important;
+        }
+    }
+    </style>
+    """, unsafe_allow_html=True)
     
     # 6 صفوف × 8 أعمدة
     for row in range(6):
